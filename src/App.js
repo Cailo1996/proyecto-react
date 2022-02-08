@@ -1,11 +1,16 @@
+// Componentes
 import Navbar from './components/Navbar/Navbar'
 import Footer from './components/Footer/Footer'
+import Offers from './components/Offers/Offers';
+
+// Data
+import { list } from './data/offers'
 
 function App() {
   return (
     <div>
-      {/* Acá van a renderizar todos sus componentes */}
       <Navbar/>
+      <Offers list={list} />
       <Footer/>
     </div>
   );
