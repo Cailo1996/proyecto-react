@@ -1,7 +1,7 @@
 // Componentes
 import Navbar from './components/Navbar/Navbar'
 import Footer from './components/Footer/Footer'
-import Offers from './components/Offers/Offers'
+import Offers from './components/Offers/Offers';
 import Instagram from './components/Instagram/Instagram';
 import OurPartner from './components/Our Partner/OurPartner';
 import Banner from './components/Banner/Banner';
