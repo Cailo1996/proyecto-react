@@ -4,7 +4,7 @@ const Warning = () => {
   const [showAlert, setShowAlert] = React.useState(true);
   return (
     <>
-      {showAlert ? (
+      {showAlert && (
         <div className="bg-stone-400 flex flex-row ">
           <p className="font-semibold text-white grow flex justify-center  ">
             Free Delivery over $100. Gift with Purchase over $150
@@ -29,7 +29,7 @@ const Warning = () => {
             </svg>
           </button>
         </div>
-      ) : null}
+      ) }
     </>
   );
 };
