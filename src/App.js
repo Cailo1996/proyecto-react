@@ -6,6 +6,7 @@ function App() {
     <div>
       {/* Acá van a renderizar todos sus componentes */}
       <Navbar/>
+      {/* modificado por ivan */}
       <Footer/>
     </div>
   );
