@@ -1,22 +1,26 @@
 export const list = [
   {
     nombre: "Pepperoni Pizza",
-    precio: "19.99",
-    foto: "https://www.pronto.com.ar/u/fotografias/m/2021/8/28/f608x342-28012_57735_31.jpeg",
+    precio: "$19.99",
+    antes: "$24.99",
+    foto: "https://placeralplato.com/files/2016/01/Pizza-con-pepperoni-640x480.jpg?width=1200&enable=upscale",
   },
   {
-    nombre: "Pancho",
-    precio: "4.99",
-    foto: "https://www.pronto.com.ar/u/fotografias/m/2021/8/28/f608x342-28012_57735_31.jpeg",
+    nombre: "Baked Pancakes",
+    precio: "$35.99",
+    antes: "$44.99",
+    foto: "https://getonmyplate.com/wp-content/uploads/2021/09/AIR-FRYER-BAKED-PANCAKES-15.jpg",
   },
   {
-    nombre: "Hamburguesa",
-    precio: "5.99",
-    foto: "https://www.pronto.com.ar/u/fotografias/m/2021/8/28/f608x342-28012_57735_31.jpeg",
+    nombre: "Avocado",
+    precio: "$17.99",
+    antes: "$20.99",
+    foto: "https://darlyon.com/web/wp-content/uploads/2020/05/avocado-hub.jpg",
   },
   {
-    nombre: "Gaseosa",
-    precio: "9.99",
-    foto: "https://www.pronto.com.ar/u/fotografias/m/2021/8/28/f608x342-28012_57735_31.jpeg",
+    nombre: "Bunch of Orange",
+    precio: "$24.99 ",
+    antes: "$29.99",
+    foto: "https://fustany.com/images/en/content/header_image_header_image_Article-Main-Benefits-Of-Orange-AR.jpg",
   },
 ];
