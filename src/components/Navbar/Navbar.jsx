@@ -1,8 +1,23 @@
 import React from 'react';
-import './styles.css'
+import { navlist } from '../../data/navbar';
+
 
 const Navbar = () => {
-  return <nav className="navbar-title">Soy la Navbar</nav>;
+  return (
+    <>  
+      <div>
+          <ul className='flex flex-row'>
+            {
+              navlist.map(listnavbar => (
+                <li>
+                  <a href={listnavbar.link}>{listnavbar.namenavbar}</a>
+                </li>
+              ))  
+            }
+          </ul>
+      </div> 
+    </>   
+  )
 };
 
 export default Navbar;
