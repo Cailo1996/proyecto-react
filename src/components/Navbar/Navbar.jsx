@@ -7,6 +7,7 @@ import {faMagnifyingGlass, faUser, faShoppingCart} from '@fortawesome/free-solid
 
 
 const Navbar = ({cart}) => {
+  console.log('prueba')
   return (
     <>  
       <div className='flex justify-between flex items-center'>
