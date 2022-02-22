@@ -13,6 +13,7 @@ import Warning from "./components/Warning/Warning";
 import { useState } from "react";
 // Data
 import { list } from "./data/offers";
+import {WC} from "./data/Choose";
 
 function App() {
   const [value, setValue] = useState(0);
@@ -22,7 +23,7 @@ function App() {
       <Navbar cart={value}/>
       <Banner />
       <Offers title="Latest"  list={list} cart={value} setCart={setValue} />
-      <WhyChoose />
+      <WhyChoose list={WC} />
       <WhoMakes />
       <OurPartner />
       <SurpriseSomeone />
