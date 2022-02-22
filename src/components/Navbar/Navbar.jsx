@@ -3,10 +3,10 @@ import { navlist } from '../../data/navbar';
 import Logo from './Logo/Logo';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faMagnifyingGlass, faUser, faShoppingCart} from '@fortawesome/free-solid-svg-icons';
-import './icon.css'
 
 
-const Navbar = () => {
+
+const Navbar = ({cart}) => {
   return (
     <>  
       <div className='flex justify-between flex items-center'>
@@ -29,9 +29,10 @@ const Navbar = () => {
                   <li className='rounded-full outline outline-offset-8 outline-1 outline-gray-300'>  <FontAwesomeIcon icon={faMagnifyingGlass} />  </li>
                   <li className='rounded-full outline outline-offset-8 outline-1 outline-gray-300'>  <FontAwesomeIcon icon={faUser} />  </li>
                   
-                  <li className='rounded-full outline outline-offset-8 outline-1 outline-gray-300'>  <FontAwesomeIcon icon={faShoppingCart} /></li>
-                     
-                  
+                  <div className='flex flex-row flex items-start'>
+                    <li className='rounded-full outline outline-offset-8 outline-1 outline-gray-300'>  <FontAwesomeIcon icon={faShoppingCart} /></li>
+                    <h3>{cart}</h3>
+                  </div>                  
               </ul>
           </div>
       </div>

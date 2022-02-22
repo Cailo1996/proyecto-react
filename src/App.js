@@ -18,9 +18,8 @@ function App() {
   const [value, setValue] = useState(0);
   return (
     <div>
-      <h1>{value}</h1>
       <Warning />
-      <Navbar />
+      <Navbar cart={value}/>
       <Banner />
       <Offers title="Latest"  list={list} cart={value} setCart={setValue} />
       <WhyChoose />
