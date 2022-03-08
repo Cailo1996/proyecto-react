@@ -14,7 +14,7 @@ import { useState } from "react";
 // Data
 import { list } from "./data/offers";
 import {WC} from "./data/Choose";
-import { footList } from "./data/fdata";
+//import { footList } from "./data/fdata"; */
 
 function App() {
   const [value, setValue] = useState(0);
