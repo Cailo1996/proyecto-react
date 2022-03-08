@@ -30,7 +30,7 @@ function App() {
       <SurpriseSomeone />
       <Instagram />
       <TellaFriend />
-      <Footer footList={footList} />
+      <Footer />
 
     </div>
   );
