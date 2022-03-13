@@ -25,7 +25,7 @@ function App() {
       <Offers title="Latest"  list={list} cart={value} setCart={setValue} />
       <WhyChoose list={WC} />
       <WhoMakes />
-      <OurPartner />
+      <OurPartner title= "Our Charity Partner, City Bakery" icon= "https://www.svgrepo.com/show/112657/restaurant.svg" bt="Learn more about City Bakery" />
       <SurpriseSomeone />
       <Instagram />
       <TellaFriend />
