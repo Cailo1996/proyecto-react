@@ -1,11 +1,9 @@
 import React, {useEffect} from "react";
+import Modal from "../Modal/Modal";
 
-const Offers = ({ list, cart, setCart, title }) => {
-/** 
-useEffect(()=>{
-  alert(123)
-},[cart]) 
-*/
+
+const Offers = ({ list, title, setShow, show }) => {
+
   return (
     <div className="bg-white">
       <div className="max-w-2xl px-4 py-4 mx-auto sm:px-6 lg:max-w-7xl lg:px-4">
@@ -28,7 +26,8 @@ useEffect(()=>{
                 <p className="font-bold text-gray-900 lg:text-sm">{item.precio} <span className="text-sm font-medium text-gray-500 line-through lg:text-xs">{item.antes}</span></p>
               </div>
               <div>
-                <button onClick={()=>setCart(cart+1)} className="w-full text-white bg-orange-600 rounded-b-xl h-11 hover:opacity-75">Comprar</button>
+                <button onClick={()=>setShow(true)} className="w-full text-white bg-orange-600 rounded-b-xl h-11 hover:opacity-75">Comprar</button>
+                
               </div>
               
             </div>

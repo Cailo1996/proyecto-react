@@ -11,9 +11,11 @@ import TellaFriend from "./components/Tell a Friend/TellaFriend";
 import WhyChoose from "./components/Why Choose/WhyChoose";
 import Warning from "./components/Warning/Warning";
 import { useState } from "react";
+import Modal from "./components/Modal/Modal";
 // Data
 import { list } from "./data/offers";
 import {WC} from "./data/Choose";
+
 
 function App() {
   const [value, setValue] = useState(0);
@@ -22,7 +24,7 @@ function App() {
       <Warning />
       <Navbar cart={value}/>
       <Banner />
-      <Offers title="Latest"  list={list} cart={value} setCart={setValue} />
+      <Offers title="Latest"  list={list} />
       <WhyChoose list={WC} />
       <WhoMakes />
       <OurPartner title= "Our Charity Partner, City Bakery" icon= "https://www.svgrepo.com/show/112657/restaurant.svg" bt="Learn more about City Bakery" />
@@ -30,7 +32,7 @@ function App() {
       <Instagram />
       <TellaFriend />
       <Footer />
-
+      <Modal  cart={value} setCart={setValue}/>
     </div>
   );
 }
