@@ -10,7 +10,7 @@ const WhoMakes = () => {
                     <div className='text-base not-italic text-black '>
                         <h2 className='text-4xl italic font-normal'>Who Makes Your Food?</h2>
                         <br></br>
-                        <p className='font-bold'>Our mission is to help grow the local food ecosystem in BC and across Canada.Why?</p>
+                        <p className='font-bold'>Our mission is to help grow the local food ecosystem in BC and across Canada. Why?</p>
                         <br></br>
                         <ul className='font-medium list-disc list-outside'>
                             <li>Because it connects us to the land we live on, and to the people who live here</li>
