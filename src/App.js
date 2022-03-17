@@ -19,12 +19,16 @@ import {WC} from "./data/Choose";
 
 function App() {
   const [value, setValue] = useState(0);
+  const [showModal, setShowModal] = useState(false);
+  const openModal = () => {
+    setShowModal(prev => !prev);
+  };
   return (
     <div>
       <Warning />
       <Navbar cart={value}/>
       <Banner />
-      <Offers title="Latest"  list={list} />
+      <Offers title="Latest"  list={list}  openModal={openModal} />
       <WhyChoose list={WC} />
       <WhoMakes />
       <OurPartner title= "Our Charity Partner, City Bakery" icon= "https://www.svgrepo.com/show/112657/restaurant.svg" bt="Learn more about City Bakery" />
@@ -32,8 +36,8 @@ function App() {
       <Instagram />
       <TellaFriend />
       <Footer />
-      <Modal  cart={value} setCart={setValue}/>
-    </div>
+      <Modal  cart={value} setCart={setValue} showModal={showModal} setShowModal={setShowModal}  />
+    </div> 
   );
 }
 
