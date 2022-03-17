@@ -15,7 +15,7 @@ import Modal from "./components/Modal/Modal";
 // Data
 import { list } from "./data/offers";
 import {WC} from "./data/Choose";
-
+ 
 
 function App() { 
   const [value, setValue] = useState(0);

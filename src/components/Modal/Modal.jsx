@@ -6,11 +6,11 @@ const Modal = ({ cart, setCart, showModal, setShowModal }) => {
       {" "}
       {showModal ? (
         <div className="fixed inset-0 flex items-center justify-center  bg-black/[.5]">
-          <div className="w-96 h-52 bg-white rounded-xl flex items-center justify-center flex-col">
+          <div className="flex flex-col items-center justify-center bg-white w-96 h-52 rounded-xl">
             <div className="p-2.5 flex items-center justify-center">
               <h4 _className="m-0">Modal title</h4>
             </div>
-            <div className="p-8  flex items-center justify-center">
+            <div className="flex items-center justify-center p-8">
               This is modal content
             </div>
             <div className="p-2.5 flex ">
@@ -19,15 +19,15 @@ const Modal = ({ cart, setCart, showModal, setShowModal }) => {
                   setCart(cart + 1);
                   setShowModal((prev) => !prev);
                 }}
-                className=" text-white bg-orange-600 rounded-xl h-11 hover:opacity-75 w-44 mx-1"
+                className="mx-1 text-white bg-orange-600  rounded-xl h-11 hover:opacity-75 w-44"
               >
                 Confirmar
               </button>
               <button
-                onClick={() => {
+                onClick={() => { 
                   setShowModal((prev) => !prev);
                 }}
-                className=" text-white bg-orange-600 rounded-xl h-11 hover:opacity-75 w-44 mx-1"
+                className="mx-1 text-white bg-orange-600  rounded-xl h-11 hover:opacity-75 w-44"
               >
                 Cancelar
               </button>

@@ -6,7 +6,7 @@ import Modal from "../Modal/Modal";
 const Offers = ({ list, title, openModal }) => {
  
 
-  return (
+  return ( 
     <div className="bg-white">
       <div className="max-w-2xl px-4 py-4 mx-auto sm:px-6 lg:max-w-7xl lg:px-4">
         <h2 className="text-2xl font-extrabold tracking-tight text-gray-900">{title} <span className="text-orange-600">Offers</span></h2>
