@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 
-const Modal = ({ cart, setCart, showModal, SetShowModal }) => {
+
+
+
+const Modal = ({ cart, setCart, showModal, setShowModal }) => {
     
   return (
     <> {showModal ?
@@ -14,7 +17,8 @@ const Modal = ({ cart, setCart, showModal, SetShowModal }) => {
           </div>
           <div className="p-2.5 w-96">
             <button
-              onClick={() => setCart(cart + 1)}
+              onClick= {() => {setCart(cart + 1); setShowModal(prev => !prev)}}
+              
               className="w-full text-white bg-orange-600 rounded-xl h-11 hover:opacity-75"
             >
               Confirmar

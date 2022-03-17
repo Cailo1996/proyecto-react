@@ -17,7 +17,7 @@ import { list } from "./data/offers";
 import {WC} from "./data/Choose";
 
 
-function App() {
+function App() { 
   const [value, setValue] = useState(0);
   const [showModal, setShowModal] = useState(false);
   const openModal = () => {
