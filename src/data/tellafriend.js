@@ -2,9 +2,9 @@
 // import {} from '@fortawesome/free-solid-svg-icons';
 import {
   faFacebookMessenger,
-  faFacebook,
+  faFacebookF,
   faInstagram,
-  faTelegram,
+  faTelegramPlane,
   faTwitter,
   faWhatsapp,
 } from "@fortawesome/free-brands-svg-icons";
@@ -13,7 +13,7 @@ export const tellafriends = [
   {
     socialnet: "Facebook",
     link: "https://www.facebook.com/",
-    icon: faFacebook,
+    icon: faFacebookF,
   },
   {
     socialnet: "Instagram",
@@ -38,6 +38,6 @@ export const tellafriends = [
   {
     socialnet: "Telegram",
     link: "https://web.telegram.org/",
-    icon: faTelegram,
+    icon: faTelegramPlane,
   },
 ];
