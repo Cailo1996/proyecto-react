@@ -15,7 +15,7 @@ import Modal from "./components/Modal/Modal";
 // Data
 import { list } from "./data/offers";
 import {WC} from "./data/Choose";
-import Example from "./components/Navbar/NavBarMod";
+
  
 
 function App() { 
