@@ -18,7 +18,7 @@ const WC = ({list}) => {
                   </div>
                   <div className="flex-col ">
                     <div>
-                      <h3 className="font-bold text-gray-900 lg:text-lg italic decoration-orange-500 ">{item.nombre}</h3>
+                      <h3 className="font-bold text-gray-900 lg:text-lg italic ">{item.nombre}</h3>
                     </div>                  
                     <p className=" text-gray-900 lg:text-base ">{item.descripcion} </p>
                   </div>

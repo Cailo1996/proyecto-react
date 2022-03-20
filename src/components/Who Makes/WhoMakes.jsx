@@ -1,43 +1,44 @@
-import React from 'react';
+import React from "react";
+import { CheckCircleIcon } from "@heroicons/react/outline";
 
-const WhoMakes = ({list}) => {
-    return ( 
-        // <p>Who Makes</p>
-        <>
-            <div className='h-screen py-5 m-4 bg-stone-50'>
+const WhoMakes = ({ list }) => {
+  return (
+    <div className="max-w-2xl px-4 py-4 mx-auto sm:px-6 lg:max-w-7xl lg:px-4 ">
+      <h2 className="text-2xl font-extrabold tracking-tight text-gray-900 py-2">
+        Who Makes <span className="text-orange-600 ">Your Food?</span>
+      </h2>
+      <div className="flex">
+        <div className="flex flex-col justify-around">
+          <p className="font-bold text-gray-900 lg:text-lg italic py-2">
+            Our mission is to help grow the local food ecosystem in BC and
+            across Canada. Why?{" "}
+          </p>
+          <div className="flex flex-col justify-between">
+            {list.map((item, index) => (
+              <ul key={index} className="flex py-2  ">
+                <CheckCircleIcon className="h-10  flex-none text-white bg-orange-500 rounded-full " />
+                <li className="px-2  flex"> {item.Text}</li>
+              </ul>
+            ))}
+          </div>
+          <div>
+            <a
+              href="#"
+              className="w-full flex items-center justify-center px-8 py- border border-transparent text-base font-medium text-white bg-orange-600 rounded-xl hover:bg-orange-500 md:py-3 md:text-lg md:px-10"
+            >
+              Discover our Producers
+            </a>
+          </div>
+        </div>
+        <div className="p-4 w-3/4">
+          <img
+            src="https://www.rionegro.com.ar/wp-content/uploads/2019/06/Moras2.jpg?resize=1536,1152"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+  );
+};
 
-                <div className='grid grid-cols-2 m-10'>
-                    <div className='text-base not-italic text-black '>
-                        <h2 className='text-4xl italic font-normal'><span className='text-orange-500' >Who Makes</span> Your Food?</h2>
-                        <br></br>
-                        <p className='font-bold'>Our mission is to help grow the local food ecosystem in BC and across Canada. Why?</p>
-                        <br></br>
-                        <ul className='my-2 font-medium list-disc list-outside marker:text-orange-500'>
-                            <li>Because it connects us to the land we live on, and to the people who live here</li>
-                            <br></br>
-                            <li>Because it's more meaningful to cook and eat something made by a person nearby than by some distant corporation</li>
-                            <br></br>
-                            <li>Because good local food makes our corner of the world a better place to live</li>
-                            <br></br>
-                            <li>Because it supports local jobs</li>
-                            <br></br>
-                            <li>Because it makes more sense for the environment</li>
-                        </ul>
-                        <br></br>
-                        <a href="https://www.rionegro.com.ar/frutos-rojos-con-valor-patagonico-999841/" target="_blank"
-                        className='px-4 py-2 font-normal text-white bg-orange-700 rounded hover:bg-orange-500'
-                        >Discover Our Producers</a>
-                    </div>
-                    <div className='w-full h-full'>
-                        <div>
-                            <img src="https://www.huelvainformacion.es/2020/03/09/provincia/Jornaleras-pleno-faena-recoleccion-fresa_1444666238_118332782_667x375.jpg" alt="Cosecha de Frutilla" />
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </>
-     );
-}
- 
 export default WhoMakes;
