@@ -28,7 +28,6 @@ function App() {
     <div>
       <Warning />
       <Navbar cart={value}/>
-      
       <Banner />
       <Offers title="Latest"  list={list}  openModal={openModal} />
       <WhyChoose list={WC} />
