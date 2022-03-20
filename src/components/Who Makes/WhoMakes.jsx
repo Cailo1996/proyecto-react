@@ -1,6 +1,6 @@
 import React from 'react';
 
-const WhoMakes = () => {
+const WhoMakes = ({list}) => {
     return ( 
         // <p>Who Makes</p>
         <>

@@ -15,6 +15,7 @@ import Modal from "./components/Modal/Modal";
 // Data
 import { list } from "./data/offers";
 import {WC} from "./data/Choose";
+import {Makes} from "./data/Makes";
 
  
 
@@ -31,7 +32,7 @@ function App() {
       <Banner />
       <Offers title="Latest"  list={list}  openModal={openModal} />
       <WhyChoose list={WC} />
-      <WhoMakes />
+      <WhoMakes list={Makes} />
       <OurPartner title= "Our Charity Partner, City Bakery" icon= "https://www.svgrepo.com/show/112657/restaurant.svg" bt="Learn more about City Bakery" />
       <SurpriseSomeone />
       <Instagram />
