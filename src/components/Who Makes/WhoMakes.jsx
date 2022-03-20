@@ -7,8 +7,8 @@ const WhoMakes = ({ list }) => {
       <h2 className="text-2xl font-extrabold tracking-tight text-gray-900 py-2">
         Who Makes <span className="text-orange-600 ">Your Food?</span>
       </h2>
-      <div className="flex">
-        <div className="flex flex-col justify-around">
+      <div className="flex justify-around flex-col lg:flex-row">
+        <div className="flex flex-col justify-around ">
           <p className="font-bold text-gray-900 lg:text-lg italic py-2">
             Our mission is to help grow the local food ecosystem in BC and
             across Canada. Why?{" "}
@@ -24,17 +24,26 @@ const WhoMakes = ({ list }) => {
           <div>
             <a
               href="#"
-              className="w-full flex items-center justify-center px-8 py- border border-transparent text-base font-medium text-white bg-orange-600 rounded-xl hover:bg-orange-500 md:py-3 md:text-lg md:px-10"
+              className=" md:hidden lg:block w-full flex items-center justify-center px-8 py- border border-transparent text-base font-medium text-white bg-orange-600 rounded-xl hover:bg-orange-500 md:py-3 md:text-lg md:px-10"
             >
               Discover our Producers
             </a>
           </div>
         </div>
-        <div className="p-4 w-3/4">
+        <div className="p-4">
           <img
+            className="hidden md:block w-full"
             src="https://www.rionegro.com.ar/wp-content/uploads/2019/06/Moras2.jpg?resize=1536,1152"
             alt=""
           />
+          <div className="hidden md:py-4 md:block lg:hidden">
+            <a
+              href="#"
+              className=" w-full flex items-center justify-center px-8  border border-transparent text-base font-medium text-white bg-orange-600 rounded-xl hover:bg-orange-500 md:py-3 md:text-lg md:px-10"
+            >
+              Discover our Producers
+            </a>
+          </div>
         </div>
       </div>
     </div>
