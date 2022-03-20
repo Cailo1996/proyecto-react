@@ -105,8 +105,8 @@ export default function NavBar({ cart }) {
                   href={item.href}
                   className={classNames(
                     item.current
-                      ? "text-white"
-                      : "text-gray-300 hover:bg-orange-800 hover:text-white",
+                      ? "bg-gray-900 text-white"
+                      : "text-gray-300 hover:bg-gray-700 hover:text-white",
                     "block px-3 py-2 rounded-md text-base font-medium"
                   )}
                   aria-current={item.current ? "page" : undefined}
