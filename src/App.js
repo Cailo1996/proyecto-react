@@ -14,6 +14,7 @@ import { useState } from "react";
 // Data
 import { list } from "./data/offers";
 import {WC} from "./data/Choose";
+import { instaData } from "./data/Instagram"
 
 function App() {
   const [value, setValue] = useState(0);
@@ -25,9 +26,9 @@ function App() {
       <Offers title="Latest"  list={list} cart={value} setCart={setValue} />
       <WhyChoose list={WC} />
       <WhoMakes />
-      <OurPartner />
+      <OurPartner title= "Our Charity Partner, City Bakery" icon= "https://www.svgrepo.com/show/112657/restaurant.svg" bt="Learn more about City Bakery" />
       <SurpriseSomeone />
-      <Instagram />
+      <Instagram list={instaData}/>
       <TellaFriend />
       <Footer />
 
