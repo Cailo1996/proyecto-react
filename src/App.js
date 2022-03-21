@@ -11,19 +11,24 @@ import TellaFriend from "./components/Tell a Friend/TellaFriend";
 import WhyChoose from "./components/Why Choose/WhyChoose";
 import Warning from "./components/Warning/Warning";
 import { useState } from "react";
+import Modal from "./components/Modal/Modal";
 // Data
 import { list } from "./data/offers";
 import {WC} from "./data/Choose";
-import { instaData } from "./data/Instagram"
 
-function App() {
+
+function App() { 
   const [value, setValue] = useState(0);
+  const [showModal, setShowModal] = useState(false);
+  const openModal = () => {
+    setShowModal(prev => !prev);
+  };
   return (
     <div>
       <Warning />
       <Navbar cart={value}/>
       <Banner />
-      <Offers title="Latest"  list={list} cart={value} setCart={setValue} />
+      <Offers title="Latest"  list={list}  openModal={openModal} />
       <WhyChoose list={WC} />
       <WhoMakes />
       <OurPartner title= "Our Charity Partner, City Bakery" icon= "https://www.svgrepo.com/show/112657/restaurant.svg" bt="Learn more about City Bakery" />
@@ -31,8 +36,8 @@ function App() {
       <Instagram list={instaData}/>
       <TellaFriend />
       <Footer />
-
-    </div>
+      <Modal  cart={value} setCart={setValue} showModal={showModal} setShowModal={setShowModal}  />
+    </div> 
   );
 }
 

@@ -19,9 +19,7 @@ const Footer = () => {
 
           {footList.map((item) => (  
             <div className='flex flex-row space-y-2 text-base font-normal flex-nowrap' >
-              <div className='pl-20 ml-8 text-center basis-4/12'>{item.description1}</div>
-              <div className='text-left basis-1/6'>{item.description2}</div>
-              <div className='text-left basis-6/12'>{item.description3}</div>
+
             </div>
           ))}
         </div>
