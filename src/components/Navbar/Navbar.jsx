@@ -32,7 +32,7 @@ export default function NavBar({ cart }) {
             <div className="relative flex items-center justify-between h-16">
               <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
                 {/* Mobile menu button*/}
-                <Disclosure.Button className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+                <Disclosure.Button className="inline-flex items-center justify-center p-2 rounded-md text-white hover:bg-orange-800 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
                   <span className="sr-only">Open main menu</span>
                   {open ? (
                     <XIcon className="block h-6 w-6" aria-hidden="true" />
@@ -66,7 +66,7 @@ export default function NavBar({ cart }) {
                   </div>
                 </div>
               </div>
-              <div className="absolute inset-y-0 right-0 flex justify-around pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0 w-44">
+              <div className="absolute inset-y-0 right-0 flex justify-around pr-1 sm:static sm:inset-auto sm:ml-6 sm:pr-0 md:w-44">
                 <button
                   type="button"
                   className="bg-orange-800 hidden md:block p-2 rounded-full text-white  hover:outline-none hover:ring-2 hover:ring-offset-2  hover:ring-white"
@@ -81,15 +81,15 @@ export default function NavBar({ cart }) {
                   <span className="sr-only">Search</span>
                   <SearchIcon className="h-6 w-6" aria-hidden="true" />
                 </button>
-                <div className="flex static">
+                <div className="flex items-center static ">
                   <button
                     type="button"
-                    className="bg-orange-800 p-2 rounded-full text-white  hover:outline-none hover:ring-2 hover:ring-offset-2  hover:ring-white"
+                    className="bg-orange-800 p-2 rounded-full  text-white  hover:outline-none hover:ring-2 hover:ring-offset-2  hover:ring-white h-10  "
                   >
                     <span className="sr-only">Cart</span>
                     <ShoppingCartIcon className="h-6 w-6" aria-hidden="true" />
                   </button>
-                  <div className="absolute top-1 right-0 bg-white h-5 w-5 rounded-full flex items-center justify-center">
+                  <div className="absolute sm:top-1 -right-1 top-1 sm:-right-2 md:right-1 bg-white h-5 w-5 rounded-full flex items-center justify-center">
                     <h3 className="">{cart}</h3>
                   </div>
                 </div>
@@ -106,8 +106,8 @@ export default function NavBar({ cart }) {
                   href={item.href}
                   className={classNames(
                     item.current
-                      ? " text-white hover:bg-orange-800"
-                      : " hover:bg-orange-800 ",
+                      ? " text-white "
+                      : " hover:bg-orange-800 text-white ",
                     "block px-3 py-2 rounded-md text-base font-medium"
                   )}
                   aria-current={item.current ? "page" : undefined}
