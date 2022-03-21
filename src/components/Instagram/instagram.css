@@ -54,7 +54,7 @@
 
 .slick-next::before,
 .slick-prev::before {
-  color: red !important;
+  color: #F97316 !important;
   font-size: 30px !important;
 }
 
@@ -90,7 +90,7 @@
 }
 
 .slick-dots li button::before {
-  color: red !important;
+  color: #F97316 !important;
   font-size: medium !important;
 }
 
