@@ -16,7 +16,7 @@ import Modal from "./components/Modal/Modal";
 import { list } from "./data/offers";
 import {WC} from "./data/Choose";
 import {Makes} from "./data/Makes";
-
+import { instaData } from "./data/Instagram";
  
 
 function App() { 
