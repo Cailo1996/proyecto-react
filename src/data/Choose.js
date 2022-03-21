@@ -24,8 +24,7 @@ export const WC = [
       "We only offer great tasting, all natural foods that are better for you, and organic if possible.",
   },
   {
-    icono: "https://cdn-icons.flaticon.com/png/512/707/premium/707680.png?token=exp=1647811539~hmac=298610d289aac432db2901b9f192b502",
-    nombre: "Enjoy Club Level Service",
+    icono: "https://cdn-icons-png.flaticon.com/512/31/31611.png",
     descripcion:
       "As a member of our club, we will make sure you are delighted with our service or we will make it right!",
   },
