@@ -45,6 +45,9 @@ export default function Instagram ({list}) {
 
   return (
     <>
+      <div className="flex justify-center  ">
+        <h2 className="text-2xl tracking-tight font-extrabold text-center text-orange-500 sm:text-3xl md:text-4xl">@PremiumBakeryQuality <span className="text-gray-900">on Instagram</span> </h2>
+      </div>
       <div className="ContainerHorizontal" >
         <Slider {...settings} >
           {list.map((item, index) => (
