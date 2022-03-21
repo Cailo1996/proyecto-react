@@ -4,9 +4,9 @@ const SurpriseSomeOne = ({ list }) => {
   return (
     <div className="max-w-2xl px-4 py-4 mx-auto sm:px-6 lg:max-w-7xl lg:px-4 ">
       <div className="flex justify-around flex-col lg:flex-row">
-        <div className="pr-4 w-10/12">
+        <div className="lg:pr-4">
           <img
-            className="hidden md:block "
+            className="hidden md:block w-full "
             src="https://images.pexels.com/photos/5634637/pexels-photo-5634637.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
             alt=""
           />

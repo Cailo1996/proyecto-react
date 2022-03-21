@@ -24,13 +24,13 @@ const WhoMakes = ({ list }) => {
           <div>
             <a
               href="#"
-              className=" w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium text-white bg-orange-600 rounded-xl hover:bg-orange-500 md:py-4 md:text-lg md:px-10"
+              className="md:hidden w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium text-white bg-orange-600 rounded-xl hover:bg-orange-500 md:py-4 md:text-lg md:px-10"
             >
               Discover our Producers
             </a>
           </div>
         </div>
-        <div className="p-4">
+        <div className="lg:pl-4">
           <img
             className="hidden md:block w-full"
             src="https://www.rionegro.com.ar/wp-content/uploads/2019/06/Moras2.jpg?resize=1536,1152"

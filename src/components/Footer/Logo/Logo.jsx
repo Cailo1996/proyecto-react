@@ -3,8 +3,8 @@ import React from 'react';
 const Logo = () => {
   return (
     <>
-       <div className='w-1/2 h-27'>
-         <img src='https://image.shutterstock.com/image-vector/bakery-logo-bake-pastry-design-600w-1510501664.jpg' alt='Panadería'/>  
+       <div >
+         <img className='w-auto h-32 rounded-full' src='https://d1csarkz8obe9u.cloudfront.net/posterpreviews/modern-bakery-logo-design-template-e979c6db88d6772062e4090687c00b7e_screen.jpg?ts=1602149907' alt='Panadería'/>  
         </div>
     </>
 

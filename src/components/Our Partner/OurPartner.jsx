@@ -5,16 +5,19 @@ const OurPartner = ({ title, icon, bt }) => {
     <div >
       <div className="relative">
         <img
-          className="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-96 "
+          className="h-72 w-full object-cover  md:h-96 lg:w-full lg:h-96 "
           src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/a781ce32751817.56929eefe4f71.jpg"
           alt=""
         />
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="flex flex-col items-center justify-center ">
-            <h1 className="text-2xl tracking-tight font-extrabold text-black sm:text-3xl md:text-4xl">
+            <h1 className="text-2xl tracking-tight font-extrabold text-center text-gray-900 sm:text-3xl md:text-4xl">
               <span className="block xl:inline">{title}</span>
             </h1>
-            <img src={icon} alt="" className="py-5 w-20" />
+            <div className="flex justify-center my-2 h-auto w-32 ">
+            <img src={icon} alt="" className="rounded-full " />  
+            </div>
+            
             
             <div className="">
               <div className="rounded-md shadow">

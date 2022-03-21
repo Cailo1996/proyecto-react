@@ -33,7 +33,7 @@ function App() {
       <Offers title="Latest"  list={list}  openModal={openModal} />
       <WhyChoose list={WC} />
       <WhoMakes list={Makes} />
-      <OurPartner title= "Our Charity Partner, City Bakery" icon= "https://www.svgrepo.com/show/112657/restaurant.svg" bt="Learn more about City Bakery" />
+      <OurPartner title= "Our Charity Partner, City Bakery" icon= "https://i.pinimg.com/originals/f9/7d/b2/f97db283dba2ec6413ca6f83a34bb851.jpg" bt="Learn more about City Bakery" />
       <SurpriseSomeOne  list={Surp} />
       <Instagram list={instaData}/>
       <TellaFriend />

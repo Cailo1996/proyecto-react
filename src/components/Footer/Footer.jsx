@@ -8,13 +8,13 @@ const Footer = () => {
     <>
         <div className=' pt-12  bg-orange-500'>
 
-          <div className='flex flex-row flex-wrap pl-8 text-base font-semibold'>
-            <div className='basis-2/12'><Logo/></div>
-            <div className='basis-2/12'>Occasions</div>
-            <div className='basis-2/12'>All Categories</div>
-            <div className='basis-2/12'>Gift & Bundles</div>
-            <div className='basis-2/12' >Our Brands</div>
-            <div className='basis-2/12'>About Us</div>
+          <div className='flex flex-row flex-wrap pl-8 text-base font-semibold '>
+            <div className='md:basis-2/12'><Logo/></div>
+            <div className='md:basis-2/12'>Occasions</div>
+            <div className='md:basis-2/12'>All Categories</div>
+            <div className='md:basis-2/12'>Gift & Bundles</div>
+            <div className='md:basis-2/12' >Our Brands</div>
+            <div className='md:basis-2/12'>About Us</div>
           </div>
 
           {footList.map((item) => (  
