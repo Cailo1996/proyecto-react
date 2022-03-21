@@ -7,7 +7,7 @@ import {
   XIcon,
   UserIcon,
   ShoppingCartIcon,
-  CakeIcon,
+  
 } from "@heroicons/react/outline";
 import {} from "@fortawesome/free-solid-svg-icons";
 
@@ -43,10 +43,12 @@ export default function NavBar({ cart }) {
               </div>
               <div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
                 <div className="flex-shrink-0 flex items-center">
-                  <CakeIcon className="block lg:hidden h-8 w-auto text-white" />
-                  <CakeIcon className="hidden lg:block h-10 w-auto text-white" />
+                  
+                  <img className="block lg:hidden h-12 w-auto text-white rounded-full" src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/modern-bakery-logo-design-template-e979c6db88d6772062e4090687c00b7e_screen.jpg?ts=1602149907" alt="" />
+                  <img className="hidden lg:block h-10 w-auto text-white rounded-full" src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/modern-bakery-logo-design-template-e979c6db88d6772062e4090687c00b7e_screen.jpg?ts=1602149907" alt="" />
+
                   <h2 className="hidden lg:block h-8 w-auto font-sans text-2xl italic font-bold text-white">
-                    OurBakery
+                  OurBakery
                   </h2>
                 </div>
                 <div className="hidden sm:block sm:ml-6">
