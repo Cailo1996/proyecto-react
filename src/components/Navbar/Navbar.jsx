@@ -66,7 +66,7 @@ export default function NavBar({ cart }) {
                   </div>
                 </div>
               </div>
-              <div className="absolute inset-y-0 right-0 flex justify-around pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0 w-44">
+              <div className="absolute inset-y-0 right-0 flex justify-around pr-1 sm:static sm:inset-auto sm:ml-6 sm:pr-0 md:w-44">
                 <button
                   type="button"
                   className="bg-orange-800 hidden md:block p-2 rounded-full text-white  hover:outline-none hover:ring-2 hover:ring-offset-2  hover:ring-white"
@@ -81,15 +81,15 @@ export default function NavBar({ cart }) {
                   <span className="sr-only">Search</span>
                   <SearchIcon className="h-6 w-6" aria-hidden="true" />
                 </button>
-                <div className="flex static">
+                <div className="flex items-center static ">
                   <button
                     type="button"
-                    className="bg-orange-800 p-2 rounded-full text-white  hover:outline-none hover:ring-2 hover:ring-offset-2  hover:ring-white"
+                    className="bg-orange-800 p-2 rounded-full  text-white  hover:outline-none hover:ring-2 hover:ring-offset-2  hover:ring-white h-10  "
                   >
                     <span className="sr-only">Cart</span>
                     <ShoppingCartIcon className="h-6 w-6" aria-hidden="true" />
                   </button>
-                  <div className="absolute top-1 right-0 bg-white h-5 w-5 rounded-full flex items-center justify-center">
+                  <div className="absolute sm:top-1 -right-1 top-1 sm:-right-2 md:right-1 bg-white h-5 w-5 rounded-full flex items-center justify-center">
                     <h3 className="">{cart}</h3>
                   </div>
                 </div>
