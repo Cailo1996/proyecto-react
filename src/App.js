@@ -15,7 +15,7 @@ import Modal from "./components/Modal/Modal";
 // Data
 import { list } from "./data/offers";
 import {WC} from "./data/Choose";
- 
+
 
 function App() { 
   const [value, setValue] = useState(0);
@@ -33,7 +33,7 @@ function App() {
       <WhoMakes />
       <OurPartner title= "Our Charity Partner, City Bakery" icon= "https://www.svgrepo.com/show/112657/restaurant.svg" bt="Learn more about City Bakery" />
       <SurpriseSomeone />
-      <Instagram />
+      <Instagram list={instaData}/>
       <TellaFriend />
       <Footer />
       <Modal  cart={value} setCart={setValue} showModal={showModal} setShowModal={setShowModal}  />
