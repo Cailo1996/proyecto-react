@@ -1,0 +1,129 @@
+/* ------------- CARROUSEL ------------ */
+
+.ContainerHorizontal {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    height: auto !important;
+    width: 100%;
+    /* background-color: blue; */
+    /* margin-top: 1rem; */
+    padding-top: 2rem;
+    /* margin-bottom: 5rem; */
+  }
+  
+  .slick-slider {
+    display: flex !important;
+    flex-direction: column !important;
+    align-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto !important;
+    /* background-color: green; */
+    margin-bottom: 4rem;
+  }
+  
+  .slick-list {
+    width: 90%;
+    /* background-color: orange; */
+    margin-bottom: 3rem !important;
+  }
+  
+  .slick-track {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: center !important;
+    align-content: center !important;
+  }
+  
+  .slick-prev {
+    display: flex !important;
+    flex-direction: row !important;
+    /* padding-left: 3% !important; */
+    margin-left: 3%;
+    width: auto;
+  }
+  
+  .slick-next {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: center;
+    margin-right: 4%;
+    width: auto;
+  }
+  
+  .slick-next::before,
+  .slick-prev::before {
+    color: red !important;
+    font-size: 30px !important;
+  }
+  
+  .cardSlide {
+    display: flex !important;
+    flex-direction: column !important;
+    align-content: center !important;
+    height: auto !important;
+  }
+  
+  .cardSlide img {
+    margin: auto;
+    margin-top: 0;
+    width: 90%;
+    height: 12rem;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  .cardSlide h3 {
+    text-align: center;
+  }
+  
+  .slick-slider .slick-dots {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+  
+    justify-content: center !important;
+    /* margin-top: 2rem; */
+    height: 3rem !important;
+    /* background-color: aqua; */
+  }
+  
+  .slick-dots li button::before {
+    color: red !important;
+    font-size: medium !important;
+  }
+  
+  @media only screen and (max-width: 950px) { 
+    .slick-prev {
+      margin-left: 4%;
+    }
+    
+    .slick-next {
+      margin-right: 5%;
+    }
+   }
+  
+   @media only screen and (max-width: 650px) {
+    .slick-prev {
+      margin-left: 5%;
+    }
+    
+    .slick-next {
+      margin-right: 6%;
+    }
+  }
+  
+  @media only screen and (max-width: 550px) {
+    .slick-prev {
+      margin-left: 7%;
+    }
+    
+    .slick-next {
+      margin-right: 8%;
+    }
+  }
+  
+  /* @media only screen and (max-width: 350px) {
+  
+  } */
