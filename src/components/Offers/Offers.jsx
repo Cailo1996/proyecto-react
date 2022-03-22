@@ -3,8 +3,12 @@ import Modal from "../Modal/Modal";
 
 
 
-const Offers = ({ list, title, openModal }) => {
+const Offers = ({ list, title, openModal, setProduct }) => {
  
+const handleClick = (product) => { 
+  openModal();
+  return setProduct(product);
+}
 
   return ( 
     <div className="bg-white">
@@ -28,7 +32,7 @@ const Offers = ({ list, title, openModal }) => {
                 <p className="font-bold text-gray-900 lg:text-sm">{item.precio} <span className="text-sm font-medium text-gray-500 line-through lg:text-xs">{item.antes}</span></p>
               </div>
               <div>
-                <button onClick={openModal}  className="w-full font-bold text-white bg-orange-600 rounded-b-xl h-11 hover:opacity-75">Comprar</button>               
+                <button onClick={()=>handleClick(item)}  className="w-full font-bold text-white bg-orange-600 rounded-b-xl h-11 hover:opacity-75">Comprar</button>               
                
               </div>
               

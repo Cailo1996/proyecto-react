@@ -20,6 +20,7 @@ import { instaData } from "./data/Instagram";
 import { Surp } from "./data/Surp";
 
 function App() { 
+  const [product, setProduct] = useState({});
   const [value, setValue] = useState(0);
   const [showModal, setShowModal] = useState(false);
   const openModal = () => {
@@ -30,7 +31,7 @@ function App() {
       <Warning />
       <Navbar cart={value}/>
       <Banner />
-      <Offers title="Latest"  list={list}  openModal={openModal} />
+      <Offers title="Latest"  list={list}  openModal={openModal} setProduct={setProduct} />
       <WhyChoose list={WC} />
       <WhoMakes list={Makes} />
       <OurPartner title= "Our Charity Partner, City Bakery" icon= "https://i.pinimg.com/originals/f9/7d/b2/f97db283dba2ec6413ca6f83a34bb851.jpg" bt="Learn more about City Bakery" />
@@ -38,7 +39,7 @@ function App() {
       <Instagram list={instaData}/>
       <TellaFriend />
       <Footer />
-      <Modal  cart={value} setCart={setValue} showModal={showModal} setShowModal={setShowModal}  />
+      <Modal  cart={value} setCart={setValue} showModal={showModal} setShowModal={setShowModal} product={product} />
     </div> 
   );
 }
