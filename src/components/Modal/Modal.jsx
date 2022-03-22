@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 
-const Modal = ({ cart, setCart, showModal, setShowModal }) => {
+const Modal = ({ cart, setCart, showModal, setShowModal, product }) => {
+ const { nombre, precio, foto, antes } = product;
+ 
   return (
     <>
       {" "}
@@ -11,7 +13,7 @@ const Modal = ({ cart, setCart, showModal, setShowModal }) => {
               <h4 className="m-0 text-2xl font-extrabold tracking-tight text-gray-900 ">¡Se agregara a tu <span className="text-orange-600">Carrito</span> !</h4>
             </div>
             <div className="flex items-center justify-center p-8">
-              <h6 className="font-bold text-gray-900"> Producto</h6>
+              <h6 className="font-bold text-gray-900">{nombre}</h6>
             </div>
             <div className="p-2.5 flex flex-col s:flex-row ">
               <button
