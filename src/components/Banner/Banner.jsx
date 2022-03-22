@@ -5,7 +5,7 @@ const Banner = () => {
     <div>
       <div className="relative">
         <img
-          className="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-96 "
+          className="h-64 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-96 "
           src="https://media-exp1.licdn.com/dms/image/C511BAQFKcHgnNokmfw/company-background_10000/0/1548870617921?e=2159024400&v=beta&t=LvrP2gIEVkf8HTeI9HgBrGeihbYapuuqh7803UvtlUw"
           alt=""
         />

@@ -2,42 +2,42 @@
 // import {} from '@fortawesome/free-solid-svg-icons';
 import {
   faFacebookMessenger,
-  faFacebookSquare,
-  faInstagramSquare,
-  faTelegram,
-  faTwitterSquare,
-  faWhatsappSquare,
+  faFacebookF,
+  faInstagram,
+  faTelegramPlane,
+  faTwitter,
+  faWhatsapp,
 } from "@fortawesome/free-brands-svg-icons";
 
 export const tellafriends = [
   {
     socialnet: "Facebook",
     link: "https://www.facebook.com/",
-    icon: faFacebookSquare,
+    icon: faFacebookF,
   },
   {
     socialnet: "Instagram",
     link: "https://www.instagram.com/",
-    icon: faInstagramSquare,
+    icon: faInstagram,
   },
   {
     socialnet: "Twitter",
-    link: "https://www.facebook.com/",
-    icon: faTwitterSquare,
+    link: "https://twitter.com/",
+    icon: faTwitter,
   },
   {
     socialnet: "Whatsapp",
-    link: "https://www.facebook.com/",
-    icon: faWhatsappSquare,
+    link: "https://www.whatsapp.com/",
+    icon: faWhatsapp,
   },
   {
     socialnet: "Messenger",
-    link: "https://www.facebook.com/",
+    link: "https://www.messenger.com/",
     icon: faFacebookMessenger,
   },
   {
     socialnet: "Telegram",
-    link: "https://www.facebook.com/",
-    icon: faTelegram,
+    link: "https://web.telegram.org/",
+    icon: faTelegramPlane,
   },
 ];
