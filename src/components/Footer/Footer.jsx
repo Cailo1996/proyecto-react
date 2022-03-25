@@ -1,32 +1,32 @@
-import React from 'react';
-import { footList } from '../../data/fdata';
-import Logo from './Logo/Logo';
+import React from "react";
 
-
-const Footer = () => {
+const Footer = ({ list }) => {
   return (
-    <>
-        <div className=' pt-12  bg-orange-500'>
-
-          <div className='flex flex-row flex-wrap pl-8 text-base font-semibold '>
-            <div className='md:basis-2/12'><Logo/></div>
-            <div className='md:basis-2/12'>Occasions</div>
-            <div className='md:basis-2/12'>All Categories</div>
-            <div className='md:basis-2/12'>Gift & Bundles</div>
-            <div className='md:basis-2/12' >Our Brands</div>
-            <div className='md:basis-2/12'>About Us</div>
-          </div>
-
-          {footList.map((item) => (  
-            <div className='flex flex-row space-y-2 text-base font-normal flex-nowrap' >
-              <div className='pl-20 ml-8 text-center basis-4/12 hover:underline cursor-pointer'>{item.description1}</div>
-              <div className='text-left basis-1/6 hover:underline cursor-pointer'>{item.description2}</div>
-              <div className='text-left basis-6/12 hover:underline cursor-pointer'>{item.description3}</div>
+    <div className="p-8 bg-orange-500 w-full">
+      <div className="flex justify-around flex-col lg:flex-row">
+        <div className="lg:w-1/4 flex justify-center pb-4 lg:justify-start">
+          <img
+            className="w-auto h-52 rounded-full"
+            src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/modern-bakery-logo-design-template-e979c6db88d6772062e4090687c00b7e_screen.jpg?ts=1602149907"
+            alt="Panadería"
+          />
+        </div>
+        <div className="flex lg:justify-around lg:w-3/4 flex-col lg:flex-row">
+          {list.map((item, index) => (
+            <div key={index} className="flex-col">
+              <h2 className="py-8 font-bold flex justify-center lg:justify-start"> {item.title}</h2>
+              <ul>
+                {item.list.map((item, index) => (
+                  <li className="py-1" key={index}>
+                    <button> {item}</button>
+                  </li>
+                ))}
+              </ul>
             </div>
           ))}
         </div>
-    </>
-  )
+      </div>
+    </div>
+  );
 };
 export default Footer;
-

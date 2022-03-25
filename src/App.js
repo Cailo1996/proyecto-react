@@ -18,6 +18,7 @@ import {WC} from "./data/Choose";
 import {Makes} from "./data/Makes";
 import { instaData } from "./data/Instagram";
 import { Surp } from "./data/Surp";
+import {footList} from "./data/fdata";
 
 function App() { 
   const [product, setProduct] = useState({});
@@ -38,7 +39,7 @@ function App() {
       <SurpriseSomeOne  list={Surp} />
       <Instagram list={instaData}/>
       <TellaFriend />
-      <Footer />
+      <Footer list={footList} />
       <Modal  cart={value} setCart={setValue} showModal={showModal} setShowModal={setShowModal} product={product} />
     </div> 
   );
