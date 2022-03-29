@@ -2,7 +2,7 @@ import React from "react";
 
 const SurpriseSomeOne = ({ list }) => {
   return (
-    <div className="max-w-2xl px-4 py-4 mx-auto sm:px-6 lg:max-w-7xl lg:px-4 ">
+    <div className="max-w-2xl px-4 py-8 mx-auto sm:px-6 lg:max-w-7xl lg:px-4 ">
       <div className="flex justify-around flex-col lg:flex-row">
         <div className="lg:pr-4">
           <img
