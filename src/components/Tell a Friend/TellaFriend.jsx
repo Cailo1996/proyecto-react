@@ -8,7 +8,7 @@ import { tellafriends } from "../../data/tellafriend";
 const TellaFriend = () => {
   return (
     <>
-      <div className="relative">
+      <div className="relative pt-8">
         <img
           className="h-64 md:h-96 w-full object-cover   lg:w-full  "
           src="https://media.istockphoto.com/vectors/abstract-bright-white-background-geometric-texture-vector-id1199291148?k=20&m=1199291148&s=170667a&w=0&h=9iNN6t0ViCrKTc9O5-6UNK5ouPR1qNXuiyzR3K2qkPI="

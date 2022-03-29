@@ -3,7 +3,7 @@ import { CheckCircleIcon } from "@heroicons/react/outline";
 
 const WhoMakes = ({ list }) => {
   return (
-    <div className="max-w-2xl px-4 py-4 mx-auto sm:px-6 lg:max-w-7xl lg:px-4 ">
+    <div className="max-w-2xl px-4 py-8 mx-auto sm:px-6 lg:max-w-7xl lg:px-4 ">
       <h2 className="text-2xl font-extrabold tracking-tight text-gray-900 py-2">
         Who Makes <span className="text-orange-600 ">Your Food?</span>
       </h2>

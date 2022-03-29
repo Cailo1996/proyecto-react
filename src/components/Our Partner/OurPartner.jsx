@@ -3,7 +3,7 @@ import React from "react";
 const OurPartner = ({ title, icon, bt }) => {
   return (
     <div >
-      <div className="relative">
+      <div className="relative py-8">
         <img
           className="h-72 w-full object-cover  md:h-96 lg:w-full lg:h-96 "
           src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/a781ce32751817.56929eefe4f71.jpg"
